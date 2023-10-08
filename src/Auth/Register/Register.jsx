@@ -18,24 +18,28 @@ const Register = () => {
         const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{6,}$/;
 
-
-        createUser(email, password)
+        if (password.length < 6) {
+            toast.error('Password must be at least 6 characters long');
+        } else if (!passwordRegex.test(password)) {
+            toast.error('Password must contain at least one capital letter, one special character, and one number');
+        } else {
+            createUser(email, password)
             .then(result => {
                 upDateProfile(name, photo)
                     .then(result => {
-
+                        toast.success('Register Successfully');
                     })
                     .catch(error => {
-
+                        toast.error(error.message);
                     })
                 navogate(lcoate?.state ? lcoate.state : '/profile');
             })
             .catch(error => {
                 toast.error(error.message);
             })
-
-
+        }
     }
 
     return (
