@@ -21,6 +21,8 @@ import Events from './components/Events/Events.jsx';
 import Event from './components/Events/Event.jsx';
 import Services from './components/Service/Services.jsx';
 import ServiceDetails from './components/Service/ServiceDetails.jsx';
+import Contact from './components/Contact/Contact.jsx';
+import About from './components/About/About.jsx';
 
 const router = createBrowserRouter([
   {
@@ -69,6 +71,14 @@ const router = createBrowserRouter([
         path: 'service/:id',
         element: <ServiceDetails></ServiceDetails>,
         loader: () => fetch('/services.json').then(res => res.json()),
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
+      },
+      {
+        path: '/about',
+        element: <About></About>,
       }
     ]
   },
