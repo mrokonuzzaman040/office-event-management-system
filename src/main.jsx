@@ -19,6 +19,7 @@ import Profile from './ProtectedRooute/Profile/Profile.jsx';
 import SpeakerCard from './components/Speakers/SpeakerCard.jsx';
 import Events from './components/Events/Events.jsx';
 import Event from './components/Events/Event.jsx';
+import Services from './components/Service/Services.jsx';
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
         path: 'event/:id',
         element: <PrivetRout><Event></Event></PrivetRout>,
         loader: () => fetch('/events.json').then(res => res.json()),
+      },
+      {
+        path: 'services',
+        element: <Services></Services>,
       }
     ]
   },

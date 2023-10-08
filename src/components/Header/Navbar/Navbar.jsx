@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../assets/images/logo.svg'
 import { AuthContex } from '../../../AuthProvider/AuthProvider';
 
@@ -44,19 +44,16 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <ul className="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
                             <li>
-                                <Link to='' className="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</Link>
+                                <NavLink to='' activeClassName='active' className="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</NavLink>
                             </li>
                             <li>
-                                <Link to='/events' className="text-gray-900 dark:text-white hover:underline">Events</Link>
+                                <NavLink to='/events' activeClassName='active' className="text-gray-900 dark:text-white hover:underline">Events</NavLink>
                             </li>
                             <li>
-                                <Link to='' className="text-gray-900 dark:text-white hover:underline">Team</Link>
+                                <NavLink to='' activeClassName='active' className="text-gray-900 dark:text-white hover:underline">Services</NavLink>
                             </li>
                             <li>
-                                <Link to='' className="text-gray-900 dark:text-white hover:underline">Features</Link>
-                            </li>
-                            <li>
-                                <Link to='speakers' className="text-gray-900 dark:text-white hover:underline">Speakers</Link>
+                                <NavLink to='' activeClassName='active' className="text-gray-900 dark:text-white hover:underline">Features</NavLink>
                             </li>
                         </ul>
                     </div>
