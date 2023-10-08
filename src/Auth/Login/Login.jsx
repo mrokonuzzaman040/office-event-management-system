@@ -21,7 +21,13 @@ const Login = () => {
                 toast.success('Login Success');
             })
             .catch(error => {
-                toast.error(error.message);
+                if (error.code === 'auth/user-not-found' || error.code === 'auth/invalid-email') {
+                    toast.error('Invalid email');
+                } else if (error.code === 'auth/wrong-password') {
+                    toast.error('Invalid password');
+                } else {
+                    toast.error(error.message);
+                }
             })
     }
     return (
