@@ -1,0 +1,47 @@
+{
+    "eventServices": [
+      {
+        "id": 1,
+        "name": "Full Event Planning",
+        "image": "https://i.ibb.co/183z0wW/event-planning-83117947-5c5f774846e0fb00015875da.jpg",
+        "price": "$5,000",
+        "description": "Comprehensive event planning service covering every aspect of your event, from concept to execution."
+      },
+      {
+        "id": 2,
+        "name": "Venue Selection",
+        "image": "https://i.ibb.co/wzGTcps/venue-selection-side-pic.jpg",
+        "price": "$1,500",
+        "description": "Expert assistance in finding and securing the perfect venue for your event."
+      },
+      {
+        "id": 3,
+        "name": "Catering Services",
+        "image": "https://i.ibb.co/mqy7GW2/421437-247319.webp",
+        "price": "$2,500",
+        "description": "Delicious catering options tailored to your event's theme and dietary preferences."
+      },
+      {
+        "id": 4,
+        "name": "Audio-Visual Setup",
+        "image": "https://i.ibb.co/gvQXSq9/vario-videoworld.jpg",
+        "price": "$1,200",
+        "description": "State-of-the-art audio and visual equipment setup for presentations and entertainment."
+      },
+      {
+        "id": 5,
+        "name": "Decoration Services",
+        "image": "https://i.ibb.co/YRxWyRH/438df06f0ccbed252a3feab089f3b739-corporate-events-decor-corporate-event-design.jpg",
+        "price": "$800",
+        "description": "Elegant and thematic event decoration services to create a captivating atmosphere."
+      },
+      {
+        "id": 6,
+        "name": "Event Photography",
+        "image": "https://i.ibb.co/t8V6K75/190921-UDIA-AFE-11.jpg",
+        "price": "$1,000",
+        "description": "Professional event photography to capture and preserve your special moments."
+      }
+    ]
+  }
+  

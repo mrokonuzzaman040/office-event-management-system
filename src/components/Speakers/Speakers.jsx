@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 import SpeakerCard from './SpeakerCard';
 import { Link } from 'react-router-dom';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 const Speakers = () => {
     const [speakers, setSpeakers] = useState([]);
 
@@ -25,22 +30,23 @@ const Speakers = () => {
                         const id = speaker.id;
                         {
                             return (
-                                <Link key={id} to={`/speaker/${id}`} className='grid gap-10 mx-auto w-full max-w-screen-xl lg:tooltip' data-tip={speaker.description}>
-                                    <div className="">
-                                        <div className="card card-side bg-base-100 shadow-xl items-center">
-                                            <figure><p className='text-7xl items-center text-white'><img src={speaker.profile_picture} alt="" /></p></figure>
-                                            <div className="card-body">
-                                                <h2 className="text-start font-bold text-white text-2xl">{speaker.name}</h2>
-                                                <p className='text-start text-white'>{speaker.title}</p>
-                                            </div>
+                                <Link key={id} to={`/speaker/${id}`} className='grid gap-10 mx-auto w-full max-w-screen-xl lg:tooltip'>
+                                    <div className="" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-center">
+                                    <div className="card card-side bg-base-100 shadow-xl items-center">
+                                        <figure><p className='text-7xl items-center text-white'><img src={speaker.profile_picture} alt="" /></p></figure>
+                                        <div className="card-body">
+                                            <h2 className="text-start font-bold text-white text-2xl">{speaker.name}</h2>
+                                            <p className='text-start text-white'>{speaker.title}</p>
                                         </div>
                                     </div>
+                                </div>
                                 </Link>
-                            )
+            )
                         }
                     })
                 }
-            </div>
+        </div>
         </div >
     );
 };

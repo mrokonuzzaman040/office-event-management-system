@@ -1,5 +1,12 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
+
 const Events = () => {
     const enevtsData = useLoaderData();
     const data = enevtsData.events;
@@ -10,7 +17,7 @@ const Events = () => {
                 {
                     data.map(data => {
                         return (
-                            <div className='' key={data.id}>
+                            <div className='' data-aos="zoom-in" data-aos-duration="7000" key={data.id}>
                                 <div className="card w-96 bg-base-100 shadow-xl text-white">
                                     <figure><img className='w-full' src={data.img} alt="Shoes" /></figure>
                                     <div className="card-body">

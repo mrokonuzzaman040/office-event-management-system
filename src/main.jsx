@@ -20,6 +20,7 @@ import SpeakerCard from './components/Speakers/SpeakerCard.jsx';
 import Events from './components/Events/Events.jsx';
 import Event from './components/Events/Event.jsx';
 import Services from './components/Service/Services.jsx';
+import ServiceDetails from './components/Service/ServiceDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -55,13 +56,19 @@ const router = createBrowserRouter([
         loader: () => fetch('/events.json').then(res => res.json()),
       },
       {
-        path: 'event/:id',
+        path: '/event/:id',
         element: <PrivetRout><Event></Event></PrivetRout>,
         loader: () => fetch('/events.json').then(res => res.json()),
       },
       {
-        path: 'services',
+        path: '/services',
         element: <Services></Services>,
+        loader: () => fetch('/services.json').then(res => res.json()),
+      },
+      {
+        path: 'service/:id',
+        element: <ServiceDetails></ServiceDetails>,
+        loader: () => fetch('/services.json').then(res => res.json()),
       }
     ]
   },
