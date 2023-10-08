@@ -1,0 +1,67 @@
+{
+  "events": [
+    {
+      "img": "https://i.ibb.co/QM8LfF9/9e7730605ddb469c14a53fa7a925f670-5efa45f3e4ce3801b26349988b74b909.webp",
+      "id": 1,
+      "type": "Conference",
+      "name": "Tech Summit 2023",
+      "date": "2023-05-15",
+      "location": "San Francisco, CA",
+      "description": "A premier technology conference featuring keynote speakers, workshops, and networking opportunities."
+    },
+    {
+      "img": "https://i.ibb.co/0cCBV2M/download.jpg",
+      "id": 2,
+      "type": "Trade Show",
+      "name": "Auto Expo 2023",
+      "date": "2023-09-20",
+      "location": "New York, NY",
+      "description": "The largest automotive trade show showcasing the latest car models and industry innovations."
+    },
+    {
+      "img": "https://i.ibb.co/y5C4hh1/images.jpg",
+      "id": 3,
+      "type": "Team Building Workshop",
+      "name": "Team Dynamics Retreat",
+      "date": "2023-07-08",
+      "location": "Aspen, CO",
+      "description": "A weekend retreat focused on team building, leadership development, and outdoor activities."
+    },
+    {
+      "img": "https://i.ibb.co/YDrj8n2/images.jpg",
+      "id": 4,
+      "type": "Product Launch",
+      "name": "GadgetX Launch Event",
+      "date": "2023-04-12",
+      "location": "Los Angeles, CA",
+      "description": "Unveiling of the highly anticipated GadgetX product lineup with live demos and press coverage."
+    },
+    {
+      "img": "https://i.ibb.co/ZVfccXb/istockphoto-1146472948-612x612.jpg",
+      "id": 5,
+      "type": "Corporate Meeting",
+      "name": "Quarterly Shareholder Meeting",
+      "date": "2023-06-30",
+      "location": "Chicago, IL",
+      "description": "A meeting to discuss corporate performance, financial results, and future strategies."
+    },
+    {
+      "img": "https://i.ibb.co/YtcVv65/VR-Awards-2018-award-ceremony-production.jpg",
+      "id": 6,
+      "type": "Award Ceremony",
+      "name": "Employee Excellence Awards",
+      "date": "2023-11-17",
+      "location": "Dallas, TX",
+      "description": "An evening of recognition and celebration honoring outstanding employees and their achievements."
+    },
+    {
+      "img": "https://i.ibb.co/7vNKfPM/download.jpg",
+      "id": 7,
+      "type": "Charity Fundraiser",
+      "name": "Hope for Children Gala",
+      "date": "2023-08-05",
+      "location": "Miami, FL",
+      "description": "A charity fundraiser gala to support underprivileged children's education and healthcare."
+    }
+  ]
+}

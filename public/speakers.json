@@ -1,0 +1,67 @@
+{
+    "speakers": [
+        {
+            "id": 1,
+            "profile_picture": "https://i.ibb.co/5GwmQPw/Depositphotos-113835096-original-300x300.jpg",
+            "name": "John Smith",
+            "title": "CEO",
+            "age": 45,
+            "company": "TechCorp Inc.",
+            "description": "John Smith is the visionary leader behind TechCorp Inc. With over two decades of experience in the tech industry, he has transformed the company into a global powerhouse."
+        },
+        {
+            "id": 2,
+            "profile_picture": "https://i.ibb.co/VVHC2F3/Depositphotos-91823092-original-300x300.jpg",
+            "name": "Alice Johnson",
+            "title": "Chief Marketing Officer",
+            "age": 38,
+            "company": "MarketingX",
+            "description": "Alice Johnson is a marketing guru known for her innovative strategies. She has successfully led MarketingX to record-breaking growth in the past five years."
+        },
+        {
+            "id": 3,
+            "profile_picture": "https://i.ibb.co/QrSHGQd/Depositphotos-91652572-original-300x300.jpg",
+            "name": "David Brown",
+            "title": "CTO",
+            "age": 42,
+            "company": "InnovateTech",
+            "description": "David Brown is the driving force behind InnovateTech's cutting-edge products. His expertise in technology has propelled the company to the forefront of innovation."
+        },
+        {
+            "id": 4,
+            "profile_picture": "https://i.ibb.co/BndcY8c/Depositphotos-91647282-original-300x300.jpg",
+            "name": "Emily Davis",
+            "title": "Chief Financial Officer",
+            "age": 40,
+            "company": "FinancePro",
+            "description": "Emily Davis is a financial wizard with a knack for optimizing budgets. She has played a pivotal role in FinancePro's financial stability and growth."
+        },
+        {
+            "id": 5,
+            "profile_picture": "https://i.ibb.co/XVTrD7b/Depositphotos-82577506-original-300x300.jpg",
+            "name": "Michael White",
+            "title": "Chief HR Officer",
+            "age": 50,
+            "company": "PeopleFirst",
+            "description": "Michael White is an advocate for employee well-being at PeopleFirst. His leadership has fostered a culture of inclusivity and growth within the organization."
+        },
+        {
+            "id": 6,
+            "profile_picture": "https://i.ibb.co/ZGtKQQV/Depositphotos-46382835-original-300x300.jpg",
+            "name": "Sarah Green",
+            "title": "VP of Sales",
+            "age": 36,
+            "company": "SalesTech Solutions",
+            "description": "Sarah Green is a sales dynamo known for exceeding targets. She has played a pivotal role in SalesTech Solutions' market expansion."
+        },
+        {
+            "id": 7,
+            "profile_picture": "https://i.ibb.co/BndcY8c/Depositphotos-91647282-original-300x300.jpg",
+            "name": "Robert Lee",
+            "title": "Chief Strategy Officer",
+            "age": 44,
+            "company": "Strategic Insights",
+            "description": "Robert Lee is a strategic mastermind driving growth at Strategic Insights. His visionary approach has kept the company ahead of the competition."
+        }
+    ]
+}
