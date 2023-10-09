@@ -5,11 +5,32 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { FcGoogle } from 'react-icons/fc';
+
 const Register = () => {
-    const { createUser, upDateProfile } = useContext(AuthContex);
+    const { createUser, upDateProfile, signInWithGoogle } = useContext(AuthContex);
     const lcoate = useLocation();
     const navogate = useNavigate()
 
+    // Create User with google
+    const handelGoogleLogin = () => {
+        signInWithGoogle()
+            .then(result => {
+                upDateProfile(result.user.displayName, result.user.photoURL)
+                    .then(result => {
+                        toast.success('Register Successfully');
+                    })
+                    .catch(error => {
+                        toast.error(error.message);
+                    })
+                navogate(lcoate?.state ? lcoate.state : '/profile');
+            })
+            .catch(error => {
+                toast.error(error.message);
+            })
+    }
+
+    // Create User with email and password
     const handelRegister = (e) => {
         e.preventDefault();
         const form = new FormData(e.target);
@@ -26,19 +47,19 @@ const Register = () => {
             toast.error('Password must contain at least one capital letter, one special character, and one number');
         } else {
             createUser(email, password)
-            .then(result => {
-                upDateProfile(name, photo)
-                    .then(result => {
-                        toast.success('Register Successfully');
-                    })
-                    .catch(error => {
-                        toast.error(error.message);
-                    })
-                navogate(lcoate?.state ? lcoate.state : '/profile');
-            })
-            .catch(error => {
-                toast.error(error.message);
-            })
+                .then(result => {
+                    upDateProfile(name, photo)
+                        .then(result => {
+                            toast.success('Register Successfully');
+                        })
+                        .catch(error => {
+                            toast.error(error.message);
+                        })
+                    navogate(lcoate?.state ? lcoate.state : '/profile');
+                })
+                .catch(error => {
+                    toast.error(error.message);
+                })
         }
     }
 
@@ -79,6 +100,9 @@ const Register = () => {
 
                 <p className='text-center mt-4 text-sm'>Allready have an account? <Link to={'/login'} className='text-red-400'>Login</Link></p>
             </form>
+            <div className="form-control mt-6 items-center">
+                <Link onClick={handelGoogleLogin} className='text-6xl '><FcGoogle></FcGoogle></Link>
+            </div>
             <ToastContainer />
         </div>
     );

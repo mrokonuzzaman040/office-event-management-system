@@ -4,11 +4,26 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+import { FcGoogle } from 'react-icons/fc';
 const Login = () => {
 
-    const { loginUser } = useContext(AuthContex);
+    const { loginUser, signInWithGoogle } = useContext(AuthContex);
     const location = useLocation();
     const navigate = useNavigate();
+    
+
+    // Create User with google
+    const handelGoogleLogin = () => {
+        signInWithGoogle()
+            .then(result => {
+                toast.success('Login Success');
+                navigate(location?.state ? location.state : '/profile');
+            })
+            .catch(error => {
+                toast.error(error.message);
+            })
+    }
 
     const handelLogin = (e) => {
         e.preventDefault();
@@ -55,6 +70,9 @@ const Login = () => {
 
                 <p className='text-center mt-4 text-sm'>Don't have an Account? <Link to={'/register'} className='text-red-400'>Register</Link></p>
             </form>
+            <div className="form-control mt-6 items-center">
+                <Link onClick={handelGoogleLogin} className='text-6xl '><FcGoogle></FcGoogle></Link>
+            </div>
             <ToastContainer />
         </>
     );
