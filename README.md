@@ -35,14 +35,14 @@ Install my-project with npm
 
 - Single Page Application
 - No reload issue 
-- Profile
+- Profile (Privet Route)
 - Manage Event
 - Login with Email and Password
 - Login with Google
 - Service Page
-- Service details Page
+- Service details Page (Privet Route)
 - Event Page
-- Event details Page
+- Event details Page (Privet Route)
 - Hosting on Firebase
 
 ## Authors
