@@ -8,10 +8,14 @@ AOS.init();
 const Services = () => {
     const data = useLoaderData();
     const newData = data.eventServices;
-    
+
     return (
         <div>
             <div className='mt-5 lg:p-10 p-4 mx-auto w-full max-w-screen-xl'>
+                <div className="mb-10">
+                    <h1 className='text-3xl font-bold text-center'>Our Services</h1>
+                    <p className='text-center text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
                 <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {
                         newData.map(data => {
