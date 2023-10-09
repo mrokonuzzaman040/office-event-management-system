@@ -3,6 +3,9 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../assets/images/logo.svg'
 import { AuthContex } from '../../../AuthProvider/AuthProvider';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Navbar = () => {
 
     const { user, logoutUser } = useContext(AuthContex);
@@ -44,24 +47,25 @@ const Navbar = () => {
                     <div className="flex items-center">
                         <ul className="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
                             <li>
-                                <NavLink to=''  className="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</NavLink>
+                                <NavLink to='' className="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/events'  className="text-gray-900 dark:text-white hover:underline">Events</NavLink>
+                                <NavLink to='/events' className="text-gray-900 dark:text-white hover:underline">Events</NavLink>
                             </li>
                             <li>
-                                <NavLink to='services'  className="text-gray-900 dark:text-white hover:underline">Services</NavLink>
+                                <NavLink to='services' className="text-gray-900 dark:text-white hover:underline">Services</NavLink>
                             </li>
                             <li>
-                                <NavLink to='contact'  className="text-gray-900 dark:text-white hover:underline">Contact</NavLink>
+                                <NavLink to='contact' className="text-gray-900 dark:text-white hover:underline">Contact</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/about'  className="text-gray-900 dark:text-white hover:underline">About</NavLink>
+                                <NavLink to='/about' className="text-gray-900 dark:text-white hover:underline">About</NavLink>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <ToastContainer />
         </div>
     );
 };
