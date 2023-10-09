@@ -5,6 +5,7 @@ import OverView from '../../components/OverView/OverView';
 import Speakers from '../../components/Speakers/Speakers';
 import Pricetable from '../../components/PriceTable/Pricetable';
 import Services from '../../components/Service/Services';
+import FaqSection from '../../components/FaqSection/FaqSection';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Speakers></Speakers>
             <Pricetable></Pricetable>
             <Services></Services>
+            <FaqSection></FaqSection>
         </div>
     );
 };
