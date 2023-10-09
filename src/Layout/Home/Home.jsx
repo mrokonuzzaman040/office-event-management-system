@@ -17,7 +17,7 @@ const Home = () => {
             <Pricetable></Pricetable>
             <Services></Services>
             <FaqSection></FaqSection>
-        </div>
+        </div >
     );
 };
 

@@ -80,6 +80,11 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About></About>,
+      },
+      {
+        path: '/speakers',
+        element: <Speakers></Speakers>,
+        loader: () => fetch('/speakers.json').then(res => res.json()),
       }
     ]
   },

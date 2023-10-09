@@ -12,7 +12,7 @@ const Hero = () => {
     const [seconds, setSeconds] = useState('00');
 
     useEffect(() => {
-        const countdownDate = new Date('October 12, 2023 11:59:00').getTime();
+        const countdownDate = new Date('October 22, 2023 11:59:00').getTime();
 
         const interval = setInterval(() => {
             const now = new Date().getTime();

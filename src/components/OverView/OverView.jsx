@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const OverView = () => {
     return (
@@ -16,7 +17,7 @@ const OverView = () => {
                         Forth shall female dominion, thing seas male great. Given great, a have over firmament that first open seas after living green upon his. Under blessed all our first all every face third their waters had void can't morning which. From
 
                     </p>
-                    <button className='btn btn-primary m-2'>Speakers</button>
+                    <Link to={'/speakers'} className='btn btn-primary m-2'>Speakers</Link>
                 </div>
 
                 <div className="video">
